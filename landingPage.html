@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title> 
+    <link rel="stylesheet" href="./landing.css">
+</head>
+
+<body>
+    <section class="home2">
+        <h1>Welcome to Coffee Shop</h1>
+        <div class="home">
+            <nav class="home1">
+                <ul class="Heading1">
+                    <li><img src="./images/coffeelogo.jpg" width="40" height="40" /></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Menu">Menu</a> </li>
+                    <li><a href="#Reservation">Reservation</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="https://www.facebook.com/login/"><img src="./images/facebooklogo.jpeg" width="40" height="40"/></a></li>
+                    <li><a  href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4iLCJteCI6IjIifQ%3D%3D%22%7D"><img
+                                src="./images/xLogo.jpg" width="40" height="40"/></a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <button id="btn1">Look menu</button>
+    </section>
+    <section>    <div id="Menu">
+        <div class="order">
+            <img src="./images/blackcoffeeimage.jpeg" width="200" height="200" />
+            <P> BLACK COFFEE <br>$200</P>
+
+        </div>
+        <div class="order">
+            <img src="./images/cappucino.jpeg" width="200" height="200" />
+            <P>CAPPUCCINO <br>$500</P>
+
+        </div>
+
+        <div class="order">
+            <img src="./images/icecoffee.jpeg" width="200" height="200" />
+            <P>ICE COFFEE <br>$300</P>
+        </div>
+        <div class="order">
+            <img src="./images/coldcoffee.jpeg" width="200" height="200" />
+            <p> COLD COFFEE <br> $400</p>
+
+        </div>
+        <div class="order">
+            <img src="./images/normalcoffee.jpeg" width="200" height="200" />
+            <P> NORMAL COFFEE <br>$100</P>
+
+        </div>
+        <div class="order">
+            <img src="./images/filtercofee.jpeg" width="200" height="200" />
+            <P>FILTER COFFEE <br>$150</P>
+        </div>
+    </div></section>
+<section>
+    <div id="Reservation">
+        <form class="res">
+
+            <div  class="resl">
+                <label for="Firstname">FirstName:</label>
+                <input type="text" id="FirstName" />
+            </div>
+            <div class ="resl">
+
+                <label for="Lastname">LastName:</label>
+                <input type="text" id="name" />
+            </div>
+            <div class ="resl">
+
+                <label for="phoneNumber">phoneNumber:</label>
+                <input type="number" id="number"  />
+            </div>
+            <div class="resl">
+                <label for="Booking Date">Booking Date:</label>
+                <input type="date" id="booking_date" />
+            </div>
+            
+            <div class="resl">
+                <button onclick="booking()" id=" btn2">Submit</button>
+            </div>
+ 
+        </form>
+    </div></section>
+    <div id="About">
+        <p id="para">Starting a coffee shop can be a big investment of time and money, but it can also offer the opportunity to be your own boss, share your passion for coffee, and potentially earn a substantial income. Here are some things to consider when starting a coffee shop: 
+            Business plan: Consider what type of coffee shop you want to open, what makes you special, and how you'll measure your success. You can also include a location plan, a description of the ideal location you're looking for, and the lease terms you're interested in. 
+            Funding: You can try to obtain funding from local sources and consider talking to experts like an accountant to help you build out your financials. 
+            Location: Find a good location for your coffee shop. 
+            Equipment and supplies: Source commercial equipment and order supplies. 
+            Menu: Create a menu that complements your coffee shop. You can try offering fancy coffee drinks, baked goods, and other snacks to increase revenue. 
+            Staff: Hire baristas and other staff, and focus on finding the right people, training them well, and providing a great place to work. 
+            Marketing: Develop a marketing plan before you open, and consider promoting multiple sales. 
+            Profit and loss: Get familiar with your profit and loss report, also called an income statement. This report will show sales, expenses, and net profit. You can try to control the three biggest expenses: cost of goods, rent, and wages. </p>
+    </div>
+    
+<script>
+
+
+
+    function booking()
+    {
+        var fname = document.getElementById('FirstName').value;
+        var name1 = document.getElementById('name').value;
+        var number1 = document.getElementById('number').value;
+        var booking_date1 = document.getElementById('booking_date').value;
+        
+        const allFieldsPresent =(fname && name1 && number1 && booking_date1)? "All fields present" : "Missing fields";
+
+alert(allFieldsPresent);
+
+    
+    
+    //     console.log(fname);
+    //     console.log(name);
+    //     console.log(number);
+    //     console.log(booking_date);
+    //     console.log(time);
+    // if(fname&&name&&number1&&booking_date1!=="")
+    // {
+    //     alert('submitted')
+    // }
+    //else{
+    //     alert('not submitted')
+    // }
+
+
+    function mapping() {
+
+        
+    }
+    
+}
+</script>
+
+</body>
+
+
+</html>
